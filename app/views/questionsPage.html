@@ -1,0 +1,16 @@
+<div class="jumbotron">
+  <h1> Hello ! </h1>
+  <table class="table table-striped">
+    <tr ng-repeat="q in questions.questions">
+        <td>{{ q.q }}</td>
+        <td>
+          <div class="radio" ng-repeat="a in q.answers">
+            <label><input type="radio" name="optradio">{{ a }}</label>
+          </div>
+        </td>
+      </tr>
+  </table>
+
+  <button type="button" class="btn btn-success"> Submit </button>
+
+</div>
